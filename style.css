@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('')
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-yellow: #F4D04E;
+  --color-gray-950: #111111;
+  --color-gray-500: #6B6B6B;
+  --color-white: #FFFFFF;
+
+  --spacing-300: 24px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+
+  --text-preset-1: bold 24px/1.5 'Figtree';
+  --text-preset-2: normal 16px/1.5 'Figtree';
+  --text-preset-3: normal 14px/1.5 'Figtree';
+  --text-preset-3-bold: bold 14px/1.4 'Figtree';
+
+  --shadow: 8px 8px 0 0 #000000;
+}
+
+body {
+  background-color: var(--color-yellow);
+}
+
+h1 {
+  color: var(--color-gray-950);
+  font: var(--text-preset-1);
+}
+
+p {
+  color: var(--color-gray-950);
+}
+
+.card {
+  background-color: var(--color-white);
+
+  min-width: 327px;
+  max-width: 384px;
+  padding: var(--spacing-300);
+
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.card-body {
+  margin: var(--spacing-300) 0;
+}
+
+.card-footer {
+  height: 32px;
+
+  display: flex;
+  gap: var(--spacing-150);
+
+  align-items: center;
+}
+
+.card-footer img {
+  height: 100%;
+  width: auto;
+}
+
+.card-footer p {
+  font: var(--text-preset-3-bold);
+}
